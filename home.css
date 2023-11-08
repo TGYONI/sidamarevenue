@@ -1,0 +1,292 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	
+	font-size: 30px;
+	
+	
+	
+
+}
+header{
+	position: fixed;
+	right: 0;
+	top:0;
+	z-index: 1000;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px 9%;
+	background: transparent;
+}
+body{
+	background: #25c5c5;
+	height: 150px;
+	width: 100%;
+}
+
+.logo1{
+	right: 5px;
+}
+	
+
+
+	
+
+.logo1 img{
+	border-radius: 10px;
+	
+	width:150px;
+
+}
+ .logo h1{
+	font-size:15px;
+	margin-right: 50px;
+}
+	
+	
+}
+
+
+.logo img{
+	border-radius: 10px;
+	align-items: center;
+	width:150px;
+	left: 200px;
+
+
+}
+
+
+.navlist{
+	display: flex;
+}
+.navlist a{
+	color: black;
+	margin-left: 60px;
+	font-size: 15px;
+	font-weight: 600;
+	border-bottom: 2px solid transparent;
+	transition: a11 .55s ease;
+margin-top:100px;
+}
+.navlist a:hover{
+	border-bottom: 2px solid red;
+	transform: translateX(8px);
+}
+#menu-icon{
+	color: black;
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+section {
+	padding: 0 .19%;
+}
+.hero.hero-text h1{
+	font-size: 80px;
+	font-weight: 1000px;
+	margin-bottom: 80px;
+	margin-top: 350px;
+	font-family: italic;
+	margin-left: 5px;
+}
+
+
+@media (max-width: 1535px){
+	header{
+		padding: 15px 3%;
+		transition: .2s;
+	}
+	
+
+}
+@media (max-width: 1460px){
+	section{
+		padding: 0 12%;
+		transition: .2s;
+	}
+}
+@media (max-width: 700px){
+	#menu-icon{
+		display: block;
+	
+	}
+		header{
+		padding: 0px 3%;
+		transition: .2s;
+	}
+	body{
+	
+	height: 20vh;
+}
+	.navlist{
+		position: absolute;
+		top: 50%;
+		right: 0%;
+		width: 100px;
+		height: 35vh;
+		
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 50px 20px;
+		transition: all .55s ease;
+		border-radius:10px;
+	}
+	.navlist a{
+		display: line-block;
+		margin: 5px 0;
+		margin-left: 0;
+		
+		
+	}
+
+	.navlist.open {
+		right: 0;
+	}
+	.logo{
+		align-items: center;
+	}
+	
+		.logo img{
+	border-radius: 10px;
+	margin: 5px;
+	width:125px;
+	margin-top:15px;
+}
+
+
+}
+.hero-text h1{
+	font-size: 25px;
+	font-weight: 200;
+	margin-bottom: 80px;
+	margin-top: 350px;
+	font-family: italic;
+	margin-right:0px;
+	font:bold;
+}
+.footer{
+	background: #ddd;
+	border-radius: 10px;
+	height:40vh;
+
+}
+
+}
+footer .container {
+	
+	
+	margin: auto;
+
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+ul{
+	list-style: none;
+}
+
+.footer-col{
+width: 20%;
+padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: darkgreen;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 600;
+	position: relative;
+	
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: -0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: gray;
+	text-decoration: none;
+	font-weight: 300;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: black;
+	padding-left: 10px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: blue;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: gray;
+}
+/*responsive*/
+@media(max-width: 650px){
+	.footer-col{
+		width: 50%;
+		padding: 30px;
+		height:80px;
+		
+	}
+	.footer-col ul li a{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: gray;
+	text-decoration: none;
+	font-weight: 200;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+	text-align:center;
+	font: italic;
+}
+.footer-col h4{
+	font-size: 20px;
+	color: darkgreen;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	font-weight: 500;
+	position: relative;
+	text-align:center;
+	
+}
+
+@media(max-width: 500px){
+	.footer-col{
+		width: 100%;
+		
+	}
+}

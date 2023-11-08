@@ -1,0 +1,20 @@
+*{
+	marks: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family:'Roboto' ,sans-serif;
+}
+.tax{
+	background: gray;
+	height: 50vh;
+	width: 50%;
+	position: absolute;
+	flex-direction: column;
+	margin-left: 50px;
+
+}
+.tax img{
+	width: 50%;
+	height: 50vh;
+	margin: 10px 20px;
+}
